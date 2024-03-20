@@ -2,9 +2,7 @@
 <div class="container">
   <div class="row justify-content-center">
     {{ range .Site.Data.projects }}
-    <div class="col-md-4">
       {{ partial "project.html" . }}
-    </div>
     {{ end }}
   </div>
 </div>

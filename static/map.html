@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Location Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLAzYvC2zRijzCjlTb7MoYzGgSJzLlwUeIGOncoqKLQ=" crossorigin=""/>
+</head>
+<body>
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwT8AN9zwQwCWQIRuxvQjDMgeDsIoGQONCRqjQ=" crossorigin=""></script>
+  <script>
+    var map = L.map('map').setView([38.015434, -7.874918], 13); // Replace LATITUDE and LONGITUDE with your actual coordinates
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var marker = L.marker([LATITUDE, LONGITUDE]).addTo(map);
+
+    marker.bindPopup("This is the location.").openPopup();
+  </script>
+</body>
+</html>

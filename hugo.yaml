@@ -5,6 +5,9 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+taxonomies:
+   member: members
+   category: categories
 menu:
   main:
     - name: Home
