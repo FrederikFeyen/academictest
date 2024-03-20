@@ -1,0 +1,14 @@
+{{ range . }}
+<div class="shadow p-3 card project text-center m-1" style="width: 14rem;">
+    <img src="{{ .image }}" class="card-img-top mx-auto" alt="{{ .name }}" style="width: 50px;">
+        <div class="card-body">           
+            <h5 class="card-title">{{ .name }}</h5>
+            <div class="row">
+                <div class="col"><img src="\Img\single.png" style="width: 30%;"><p>{{ .author }}</p></div>
+                <div class="col"><img src="\Img\location.png" style="width: 20%;"><p>{{ .location }}</p></div>
+            </div>
+            <p class="card-text">{{ .description }}</p>
+            <a href="{{ .url }}" class="btn csbtn m-1 col-10">Learn more</a>
+        </div>
+</div>
+{{ end }}

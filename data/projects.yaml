@@ -1,0 +1,37 @@
+projects: 
+  - name: "Project a"
+    author: John doe
+    location: Beja
+    description: "fill in a description here"
+    category: "science"
+    image: /Img/placeholder.jpg
+  - name: "Project a"
+    author: John doe
+    location: Beja
+    description: "fill in a description here"
+    category: "science"
+    image: /Img/placeholder.jpg
+  - name: "Project a"
+    author: John doe
+    location: Beja
+    description: "fill in a description here"
+    category: "science"
+    image: /Img/placeholder.jpg
+  - name: "Project a"
+    author: John doe
+    location: Beja
+    description: "fill in a description here"
+    category: "science"
+    image: /Img/placeholder.jpg
+  - name: "Project a"
+    author: John doe
+    location: Beja
+    description: "fill in a description here"
+    category: "science"
+    image: /Img/placeholder.jpg
+  - name: "Project a"
+    author: John doe
+    location: Beja
+    description: "fill in a description here"
+    category: "science"
+    image: /Img/placeholder.jpg

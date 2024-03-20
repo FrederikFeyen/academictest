@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{ $currentPageName := .Title }}
+{{ $matchingMember := "" }}
+
+{{ range .Site.Data.members.members }}
+    {{ if in .name $currentPageName }}
+        {{ $matchingMember = . }}
+    {{ end }}
+{{ end }}
+
+{{ if ne $matchingMember "" }}
+<div class="container">
+    <img src= "{{ $matchingMember.image }}" class="card-img-top rounded-circle mt-1 mx-auto" alt="{{ $matchingMember.name }}" style="width: 50px;">
+    <h3 class="tbh3"><br/>{{ $matchingMember.name }}</h3>   
+    <div class="list-group">
+        <p>{{ $matchingMember.bio }}</p>
+    </div>
+    <div class="container  ">
+        <div class="row">
+            <div class="cstmbrd col m-1 shadow p-3 ">
+                <h2 class="text-center mt-2 ">Present activities</h2>             
+                <p class="col p-4"> {{ .Content }} </p>
+            </div>
+            <div class="cstmbrd col  m-1 shadow p-3">
+                <h2 class="text-center mt-2 ">Main interests</h2> 
+                <p class="col p-4">content</p>   
+            </div>
+        </div>
+    <div class="row">
+        <div class="cstmbrd col m-1 shadow p-3">
+            <h2 class="text-center mt-2">Publications</h2>
+            <p class="col p-4">content</p>
+        </div>
+     </div>
+     <div class="row">
+        <div class="cstmbrd col m-1 shadow p-3">
+            <h2 class="text-center mt-2">Thesis</h2>
+            <p class="col p-4">content</p>
+        </div>
+     </div>
+     <div class="row">
+        <div class="cstmbrd col m-1 shadow p-3">
+            <h2 class="text-center mt-2">Supervision</h2>
+            <p class="col p-4">content</p>
+        </div>
+     </div>
+     <div class="row">
+        <div class="cstmbrd col m-1 shadow p-3">
+            <h2 class="text-center mt-2">Funded Projects</h2>
+            <p class="col p-4">content</p>
+        </div>
+     </div>
+     <div class="row">
+        <div class="cstmbrd col m-1 shadow p-3">
+            <h2 class="text-center mt-2">Further References</h2>
+            <p class="col p-4">content</p>
+        </div>
+     </div>
+    </div>
+    
+</div>
+
+{{ else }}
+<div class="container">
+    <p>Member not found.</p>
+</div>
+{{ end }}
+{{ end }}

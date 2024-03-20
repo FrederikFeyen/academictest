@@ -1,0 +1,37 @@
+members:
+  - name: John Doe
+    bio: Software Engineer
+    image: /Img/blank-profile-picture-973460_960_720.png
+    url: /john/
+    category: staff
+  - name: Bob Smith
+    bio: Data Analyst
+    image: /Img/blank-profile-picture-973460_960_720.png
+    url: /bob/
+    category: student
+  - name: Mark Jan
+    bio: Data Analyst
+    image: /Img/blank-profile-picture-973460_960_720.png
+    url: /mark/
+    category: staff
+  - name: John Doe
+    bio: Software Engineer
+    image: /Img/blank-profile-picture-973460_960_720.png
+    url: /john/
+    category: staff
+  - name: Bob Smith
+    bio: Data Analyst
+    image: /Img/blank-profile-picture-973460_960_720.png
+    url: /bob/
+    category: student
+  - name: Mark Jan
+    bio: Data Analyst
+    image: /Img/blank-profile-picture-973460_960_720.png
+    url: /mark/
+    category: staff
+  - name: John Doe
+    bio: Software Engineer
+    image: /Img/blank-profile-picture-973460_960_720.png
+    url: /john/
+    category: staff
+  

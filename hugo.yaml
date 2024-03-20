@@ -1,0 +1,32 @@
+baseURL: ''
+languageCode: en-us
+title: SEPSI Lab
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Research
+      url: /research/
+      weight: 2
+    - name: Members
+      url: /members/
+      weight: 3
+    - name: About
+      url: /about/
+      weight: 4
+    - name: Contact
+      url: /contact/
+      weight: 5
+    - name: Archive
+      url: /archive/
+      weight: 6
+module:
+  hugoVersion:
+    extended: true
+    min: 0.60.0
+    max: 0.123.0
