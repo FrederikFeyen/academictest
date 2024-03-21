@@ -117,11 +117,14 @@ font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   
 }
 
+.navbar-dark .navbar-toggler-icon {
+  background-color: #b3e79f !important;
+}
+
 .cstmftr {
   flex-shrink: 0;
   text-align: center;
   width: 100%;
-
 }
 
 .polaroid {
