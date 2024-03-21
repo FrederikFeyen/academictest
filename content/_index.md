@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "home"
 Description: SEPSI Lab Homepage 
 layout: index
 ---

@@ -5,7 +5,7 @@
     <div class="col-md-6 ">
      <h2 class="text-center">Staff Members</h2>
       <div class="row justify-content-center">
-        {{ range where .Site.Data.members "category" "staff" }}
+        {{ range where .Site.Data.members.members "category" "staff" }}
           {{ partial "member.html" . }}
         {{ end }}
       </div>
@@ -13,7 +13,7 @@
     <div class="col-md-6">
     <h2 h2 class="text-center mx-2">Student Members</h2>
       <div class="row justify-content-center">
-        {{ range where .Site.Data.members "category" "student" }}
+        {{ range where .Site.Data.members.members "category" "student" }}
           {{ partial "member.html" . }}
         {{ end }}
       </div>
