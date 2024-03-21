@@ -5,7 +5,7 @@ layout: index
 ---
 
 
-<h1 >Welcome</h1>
+# Welcome
 
 
 
