@@ -1,35 +1,24 @@
 members:
-  - name: John Doe
+  - name: José Jasnau Caeiro 
     bio: Software Engineer
-    image: /Img/blank-profile-picture-973460_960_720.png
-    urlBio: /john/
+    folder_name: joséC
+    image: /Img/joseC.jpg
+    urlBio: /josé/
     category: staff
   - name: Bob Smith
     bio: Data Analyst
+    folder_name: bobsmth
     image: /Img/blank-profile-picture-973460_960_720.png
     urlBio: /bob/
     category: student
   - name: Mark Jan
     bio: Data Analyst
+    folder_name: markjan
     image: /Img/blank-profile-picture-973460_960_720.png
     urlBio: /mark/
     category: staff
   - name: John Doe
-    bio: Software Engineer
-    image: /Img/blank-profile-picture-973460_960_720.png
-    urlBio: /john/
-    category: staff
-  - name: Bob Smith
-    bio: Data Analyst
-    image: /Img/blank-profile-picture-973460_960_720.png
-    urlBio: /bob/
-    category: student
-  - name: Mark Jan
-    bio: Data Analyst
-    image: /Img/blank-profile-picture-973460_960_720.png
-    urlBio: /mark/
-    category: staff
-  - name: John Doe
+    folder_name: jdoe
     bio: Software Engineer
     image: /Img/blank-profile-picture-973460_960_720.png
     urlBio: /john/

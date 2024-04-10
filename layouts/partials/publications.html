@@ -1,0 +1,8 @@
+<div class="cstmbrd col m-1 shadow p-3 ">
+    <h2 class="text-center mt-2 ">Publications</h2>             
+    {{ with .Site.GetPage (printf "members/%s/publications.md"  .folder_name) }}
+        <p class="col p-4"> 
+            {{ .Content }}
+        </p>
+        {{ end }}
+</div>

@@ -17,47 +17,42 @@
     </div>
     <div class="container  ">
         <div class="row">
-            <div class="cstmbrd col m-1 shadow p-3 ">
-                <h2 class="text-center mt-2 ">Present activities</h2>             
-                <p class="col p-4"> {{ .Content }} </p>
-            </div>
-            <div class="cstmbrd col  m-1 shadow p-3">
-                <h2 class="text-center mt-2 ">Main interests</h2> 
-                <p class="col p-4">content</p>   
-            </div>
+          
+            {{ if and $matchingMember.folder_name (fileExists (printf "content/members/%s/present.md" $matchingMember.folder_name)) }}
+        {{ partial "present.html" (dict "folder_name" $matchingMember.folder_name) }}
+        {{ end }}
+        {{ if and $matchingMember.folder_name (fileExists (printf "content/members/%s/main.md" $matchingMember.folder_name)) }}
+        {{ partial "main.html" (dict "folder_name" $matchingMember.folder_name) }}
+        {{ end }}
         </div>
     <div class="row">
-        <div class="cstmbrd col m-1 shadow p-3">
-            <h2 class="text-center mt-2">Publications</h2>
-            <p class="col p-4">content</p>
-        </div>
+        {{ if and $matchingMember.folder_name (fileExists (printf "content/members/%s/publications.md" $matchingMember.folder_name)) }}
+        {{ partial "publications.html" (dict "folder_name" $matchingMember.folder_name) }}
+        {{ end }}
      </div>
      <div class="row">
-        <div class="cstmbrd col m-1 shadow p-3">
-            <h2 class="text-center mt-2">Thesis</h2>
-            <p class="col p-4">content</p>
+        {{ if and $matchingMember.folder_name (fileExists (printf "content/members/%s/thesis.md" $matchingMember.folder_name)) }}
+        {{ partial "thesis.html" (dict "folder_name" $matchingMember.folder_name) }}
+        {{ end }}
         </div>
-     </div>
      <div class="row">
-        <div class="cstmbrd col m-1 shadow p-3">
-            <h2 class="text-center mt-2">Supervision</h2>
-            <p class="col p-4">content</p>
+        {{ if and $matchingMember.folder_name (fileExists (printf "content/members/%s/supervision.md" $matchingMember.folder_name)) }}
+        {{ partial "supervision.html" (dict "folder_name" $matchingMember.folder_name) }}
+        {{ end }}
         </div>
-     </div>
-     <div class="row">
-        <div class="cstmbrd col m-1 shadow p-3">
-            <h2 class="text-center mt-2">Funded Projects</h2>
-            <p class="col p-4">content</p>
-        </div>
-     </div>
-     <div class="row">
-        <div class="cstmbrd col m-1 shadow p-3">
-            <h2 class="text-center mt-2">Further References</h2>
-            <p class="col p-4">content</p>
-        </div>
-     </div>
-    </div>
+   
+    <div class="row">
+        {{ if and $matchingMember.folder_name (fileExists (printf "content/members/%s/funded.md" $matchingMember.folder_name)) }}
+        {{ partial "funded.html" (dict "folder_name" $matchingMember.folder_name) }}
+        {{ end }}
     
+    
+     </div>
+     <div class="row">
+        {{ if and $matchingMember.folder_name (fileExists (printf "content/members/%s/further.md" $matchingMember.folder_name)) }}
+        {{ partial "further.html" (dict "folder_name" $matchingMember.folder_name) }}
+        {{ end }}
+     </div>  
 </div>
 
 {{ else }}
