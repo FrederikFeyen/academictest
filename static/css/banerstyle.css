@@ -60,7 +60,7 @@ li:not(:last-child) {
 }
 
 p{
-  color: #7a7288;
+  color: #212529;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -118,8 +118,8 @@ font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar-dark .navbar-toggler-icon {
-  background-color: #b3e79f !important;
-}
+  background-image:  !important;
+ 
 
 .cstmftr {
   flex-shrink: 0;
@@ -238,11 +238,4 @@ blockquote cite:before { content: "\2014 \0020"; }
   background-color: #f2efe7;
 
 }
-
-
-
-
-
-
-
-
+}

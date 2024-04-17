@@ -1,4 +1,17 @@
 projects: 
+  - name: "AquaQ2"
+    author: John doe
+    location: Beja
+    description: "System demonstrater for water"
+    category: "science"
+    image: /Img/aquaq2.png
+    urlProject: /AquaQ2/
+  - name: "Project a"
+    author: John doe
+    location: Beja
+    description: "fill in a description here"
+    category: "science"
+    image: /Img/placeholder.jpg
   - name: "Project a"
     author: John doe
     location: Beja

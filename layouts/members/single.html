@@ -1,0 +1,72 @@
+{{ define "main" }}
+<div class="container">
+<h1 class="m-1 text-center">{{ .Title }}</h1>
+  {{ .Content }} <div>  {{ with .Resources.GetMatch "photo*" }}
+    {{ with .Fill "150x150" }}
+    <div class="text-center">  <img class="m-2 " src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt=""></div> 
+    {{ end }}
+  {{ end }}
+</div>
+
+<div class="container">
+    <div class="row">
+        {{ with .Resources.Get "present.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Present activities</h2>
+          <p class="col "> 
+            {{ .Content }}
+        </p>
+        </div>
+      {{ end }}
+    
+      {{ with .Resources.Get "main.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Main interests</h2>
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+    <div class="row">
+        {{ with .Resources.Get "publications.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Publications</h2>
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+    <div class="row">
+    
+    {{ with .Resources.Get "thesis.md" }}
+    <div class="cstmbrd col m-1 shadow p-3">
+        <h2 class="text-center mt-2 ">Thesis</h2>
+        {{ .Content }}
+       </div>
+      {{ end }}
+    </div>
+    <div class="row">
+        {{ with .Resources.Get "supervision.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Supervision</h2>
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+    <div class="row">
+        {{ with .Resources.Get "funded.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Funded projects</h2>
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+    <div class="row">
+        {{ with .Resources.Get "further.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Further references</h2>
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+</div>
+</div>
+{{ end }}

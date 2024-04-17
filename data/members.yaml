@@ -3,9 +3,9 @@ members:
     bio: Software Engineer
     folder_name: joséC
     image: /Img/joseC.jpg
-    urlBio: /josé/
+    urlBio: /joséC/
     category: staff
-  - name: Bob Smith
+  - name: Frederik Feyen
     bio: Data Analyst
     folder_name: bobsmth
     image: /Img/blank-profile-picture-973460_960_720.png

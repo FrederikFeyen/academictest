@@ -6,7 +6,20 @@
      <h2 class="text-center">Staff Members</h2>
       <div class="row justify-content-center">
         {{ range where .Site.Data.members.members "category" "staff" }}
-          {{ partial "member.html" . }}
+        <div class="shadow p-3 card member text-center m-1" style="width: 14rem;">
+          <!-- Member image -->
+          <img src="{{ .image }}" class="card-img-top rounded-circle mx-auto" alt="{{ .name }}" style="width: 50px;">
+          <div class="card-body">
+              <!-- Member name -->
+              <h5 class="card-title">{{ .name }}</h5>
+              <!-- Member bio -->
+              <p class="card-text">{{ .bio }}</p>
+              <!-- Buttons -->
+              
+              <a href="{{ .url }}" class="csbtn btn  m-1 col-10">Research</a>
+              <a href="{{ .urlBio }}" class="csbtn btn  m-1 col-10">Learn more</a>
+          </div>
+      </div>      
         {{ end }}
       </div>
     </div>
@@ -14,7 +27,20 @@
     <h2 h2 class="text-center mx-2">Student Members</h2>
       <div class="row justify-content-center">
         {{ range where .Site.Data.members.members "category" "student" }}
-          {{ partial "member.html" . }}
+        <div class="shadow p-3 card member text-center m-1" style="width: 14rem;">
+          <!-- Member image -->
+          <img src="{{ .image }}" class="card-img-top rounded-circle mx-auto" alt="{{ .name }}" style="width: 50px;">
+          <div class="card-body">
+              <!-- Member name -->
+              <h5 class="card-title">{{ .name }}</h5>
+              <!-- Member bio -->
+              <p class="card-text">{{ .bio }}</p>
+              <!-- Buttons -->
+              <a href="{{ .url }}" class="csbtn btn m-1 col-10 shadow-sm">Projects</a>
+              
+              <a href="{{ .urlBio }}" class="csbtn btn  m-1 col-10">Learn more</a>
+          </div>
+      </div>   
         {{ end }}
       </div>
     </div>

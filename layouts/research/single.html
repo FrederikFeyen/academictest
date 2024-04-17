@@ -1,0 +1,57 @@
+{{ define "main" }}
+<div class="container">
+    <h1 class="m-1 p-1 text-center">{{ .Title }}</h1>
+    {{ .Content}}
+</div>
+<div class="container">
+    <div class="row">
+        {{ with .Resources.Get "description.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Project Description</h2>
+          <p class="col "> 
+            {{ .Content }}
+        </p>
+        </div>
+      {{ end }}
+    
+      {{ with .Resources.Get "goals.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Main Goals</h2>
+          <p class="col "> 
+            {{ .Content }}
+        </p>
+        </div>
+      {{ end }}
+    </div>
+    <div class="row">
+        {{ with .Resources.Get "publications.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Publications</h2>
+          <p class="col "> 
+            {{ .Content }}
+        </p>
+        </div>
+      {{ end }}
+    </div>
+    <div class="row">
+        {{ with .Resources.Get "supervision.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Supervision</h2>
+          <p class="col "> 
+            {{ .Content }}
+        </p>
+        </div>
+      {{ end }}
+    </div>
+    <div class="row">
+        {{ with .Resources.Get "funding.md" }}
+        <div class="cstmbrd col m-1 shadow p-3">
+          <h2 class="text-center mt-2 ">Funding</h2>
+          <p class="col "> 
+            {{ .Content }}
+        </p>
+        </div>
+      {{ end }}
+    </div>
+</div>
+{{ end }}

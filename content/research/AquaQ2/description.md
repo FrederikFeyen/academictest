@@ -1,0 +1,4 @@
+---
+---
+
+The **AquaQ2** project is devoted to the design and implementation of a demonstration system for the recognition of water quality standards and quantity of water resources. The system is subdivided into the following subsystems: a pattern recognition subsystem, using deep learning techniques used in artificial intelligence, which provides the users with high-level processed information, obtained from continuously collected data and saved in a secure way coded as blockchain; a data aggregation subsystem using microcomputers commonly used in IoT (Internet of Things) for data collection and transmission; and a subsystem for the remote collection of signals from sensors, used for the acquisition of information on physical-chemical parameters of water quality and quantity.
