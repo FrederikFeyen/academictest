@@ -1,50 +1,53 @@
+#---Copy this without the "#" and change the data points to your personal data
+# Make sure the data is alginend perfectly under each other including the "-" infront of "name"
+#name: "new Research"
+#author: John doe
+#location: Beja
+#description: "fill in a description here"
+#category: "science"
+#image: /Img/placeholder.jpg
+
+
 projects: 
-  - name: "AquaQ2"
+  - name: AquaQ2
     author: John doe
     location: Beja
-    description: "System demonstrater for water"
-    category: "science"
+    description: System demonstrater for water
     image: /Img/aquaq2.png
     urlProject: /AquaQ2/
-  - name: "Project a"
+  - name: new Research
     author: John doe
     location: Beja
-    description: "fill in a description here"
-    category: "science"
+    description: fill in a description here
+    urlProject: /newResearch/
     image: /Img/placeholder.jpg
-  - name: "Project a"
+  - name: Project a
     author: John doe
     location: Beja
-    description: "fill in a description here"
-    category: "science"
+    description: fill in a description here
     image: /Img/placeholder.jpg
-  - name: "Project a"
+  - name: Project a
     author: John doe
     location: Beja
-    description: "fill in a description here"
-    category: "science"
+    description: fill in a description here
     image: /Img/placeholder.jpg
-  - name: "Project a"
+  - name: Project a
     author: John doe
     location: Beja
-    description: "fill in a description here"
-    category: "science"
+    description: fill in a description here
     image: /Img/placeholder.jpg
-  - name: "Project a"
+  - name: Project a
     author: John doe
     location: Beja
-    description: "fill in a description here"
-    category: "science"
+    description: fill in a description here
     image: /Img/placeholder.jpg
-  - name: "Project a"
+  - name: Project a
     author: John doe
     location: Beja
-    description: "fill in a description here"
-    category: "science"
+    description: fill in a description here
     image: /Img/placeholder.jpg
-  - name: "Project a"
+  - name: Project a
     author: John doe
     location: Beja
-    description: "fill in a description here"
-    category: "science"
+    description: fill in a description here
     image: /Img/placeholder.jpg

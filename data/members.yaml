@@ -1,3 +1,15 @@
+#---  Copy this without the "#" and change the data points to your personal data
+# Make sure the data is alginend perfectly under each other including the "-" infront of "name"
+ # - name: User User
+ #   bio: User Engineer
+ #   folder_name: user
+ #   image: /Img/blank-profile-picture-973460_960_720.png
+ #   urlBio: /user/
+ #   category: student
+
+
+
+
 members:
   - name: José Jasnau Caeiro 
     bio: Software Engineer
@@ -23,4 +35,11 @@ members:
     image: /Img/blank-profile-picture-973460_960_720.png
     urlBio: /john/
     category: staff
+  - name: User User
+    bio: User Engineer
+    folder_name: user
+    image: /Img/blank-profile-picture-973460_960_720.png
+    urlBio: /user/
+    category: student
+
 
