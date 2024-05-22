@@ -1,8 +1,12 @@
 {{ define "main" }}
 <div class="container">
-    <h1 class="m-1 p-1 text-center">{{ .Title }}</h1>
-    {{ .Content}}
-</div>
+  <h1 class="m-1 text-center">{{ .Title }}</h1>
+    {{ .Content }} <div>  {{ with .Resources.GetMatch "photo*" }}
+      {{ with .Fill "150x150" }}
+      <div class="text-center">  <img class="m-2 " src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt=""></div> 
+      {{ end }}
+    {{ end }}
+  </div>
 <div class="container">
     <div class="row">
         {{ with .Resources.Get "description.md" }}
@@ -52,6 +56,11 @@
         </p>
         </div>
       {{ end }}
+    </div>
+    <div class="row">
+      <div class="">
+        
+      </div>
     </div>
 </div>
 {{ end }}
